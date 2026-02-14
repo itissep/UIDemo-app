@@ -1,6 +1,6 @@
 import UIKit
 
-class ViewController: UIViewController {
+class HomeViewController: UIViewController {
 
     enum Demos {
         case vcLifeCycle
@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         var button: UIButton {
             let button = UIButton()
             button.setTitle(self.title, for: .normal)
-            button.setTitleColor(.white, for: .normal)
+            button.setTitleColor(.homeText, for: .normal)
             button.translatesAutoresizingMaskIntoConstraints = false
 
             switch self {
@@ -48,15 +48,13 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        updateBackground(.systemRed)
+        view.backgroundColor = .homeBg
 
         let stackView = UIStackView()
 
         stackView.frame = .init(origin: .init(x: 0, y: 300), size: .init(width: view.frame.width, height: view.frame.height - 600))
         stackView.axis = .vertical
         stackView.distribution = .equalSpacing
-
-//        stackView.spacing = 20
 
         view.addSubview(stackView)
 
@@ -87,10 +85,4 @@ class ViewController: UIViewController {
     @objc func buttonFrameBoundsTapped() {
         navigationController?.pushViewController(FrameBoundsDemoViewController(), animated: true)
     }
-
-    func updateBackground(_ color: UIColor) {
-        view.backgroundColor = color
-        print("Background: \(color)")
-    }
 }
-
