@@ -27,6 +27,7 @@ class HomeViewController: UIViewController {
         var button: UIButton {
             let button = UIButton()
             button.setTitle(self.title, for: .normal)
+            button.titleLabel?.font = .systemFont(ofSize: 17, weight: .bold)
             button.setTitleColor(.homeText, for: .normal)
             button.translatesAutoresizingMaskIntoConstraints = false
 

@@ -51,6 +51,7 @@ final class AppLifeCycleViewController: UIViewController {
         button.setTitle("Go to demos", for: .normal)
         button.addTarget(self, action: #selector(openDemos), for: .touchUpInside)
         button.setTitleColor(.black, for: .normal)
+        button.titleLabel?.font = .systemFont(ofSize: 17, weight: .bold)
 
         view.addSubview(label)
         view.addSubview(button)
