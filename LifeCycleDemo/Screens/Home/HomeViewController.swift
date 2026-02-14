@@ -76,7 +76,7 @@ class HomeViewController: UIViewController {
     }
 
     @objc func buttonVCTapped() {
-        navigationController?.pushViewController(LifecycleDemoViewController(), animated: true)
+        navigationController?.pushViewController(VCLifecycleDemoViewController(), animated: true)
     }
 
     @objc func buttonLayerViewTapped() {
