@@ -6,13 +6,8 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		CB7682AB2F2BF6B700B4F6B1 /* LifeCycleDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7682AA2F2BF6B700B4F6B1 /* LifeCycleDemoViewController.swift */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
 		CB7682912F2BEE0800B4F6B1 /* LifeCycleDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeCycleDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB7682AA2F2BF6B700B4F6B1 /* LifeCycleDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeCycleDemoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -50,7 +45,6 @@
 		CB7682882F2BEE0800B4F6B1 = {
 			isa = PBXGroup;
 			children = (
-				CB7682AA2F2BF6B700B4F6B1 /* LifeCycleDemoViewController.swift */,
 				CB7682932F2BEE0800B4F6B1 /* LifeCycleDemo */,
 				CB7682922F2BEE0800B4F6B1 /* Products */,
 			);
@@ -138,7 +132,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB7682AB2F2BF6B700B4F6B1 /* LifeCycleDemoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
